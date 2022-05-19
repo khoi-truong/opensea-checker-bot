@@ -1,0 +1,6 @@
+TOKEN = 'TELEGRAM_TOKEN'
+INTERVAL = 10
+USER_WHITELIST = [
+    'khoi_truong',
+]
+DEBUG = False

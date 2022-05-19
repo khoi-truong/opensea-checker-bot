@@ -1,0 +1,16 @@
+[Unit]
+Description=OpenSea Checker
+After=local-fs.target network.target
+Requires=local-fs.target network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5
+User=ec2-user
+ExecStart=/home/ec2-user/open-sea-checker-bot/start
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
